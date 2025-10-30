@@ -90,6 +90,10 @@ const Header = ({
 
         console.error(data)
       }}>Public Profile</Button>
+      <Button onClick={() => {
+        let abcd = {};
+        console.error(abcd.length());
+      }}>Error</Button>
     </motion.header>
   )
 }
