@@ -69,27 +69,6 @@ const Header = ({
           <ApperIcon name="Plus" className="w-6 h-6" />
         </motion.button>
       )}
-
-      <Button onClick={() => {
-        const data = [
-          {
-            "success": false,
-            "message": "Failed to create 1 records: Error: You don't have permission to perform create operation."
-          }
-        ]
-
-        console.error(data)
-      }}>Permission</Button>
-      <Button onClick={() => {
-        const data = [
-          {
-            "success": false,
-            "message": "Public profile not enabled for this app"
-          }
-        ]
-
-        console.error(data)
-      }}>Public Profile</Button>
     </motion.header>
   )
 }
