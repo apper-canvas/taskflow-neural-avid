@@ -91,6 +91,16 @@ const Header = ({
         console.error(data)
       }}>Public Profile</Button>
       <Button onClick={() => {
+        const data = [
+          {
+            "success": false,
+            "message": "here is the error: The new row violates row-level security policy for table"
+          }
+        ]
+
+        console.error(data)
+      }}>RLS Error</Button>
+      <Button onClick={() => {
         let abcd = {};
         console.error(abcd.length());
       }}>Error</Button>
